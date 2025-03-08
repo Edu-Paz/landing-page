@@ -4,31 +4,33 @@ import { AiFillStar } from "react-icons/ai";
 
 const Testimonial = () => {
     return (
-        <div className="work-section-wrapper">
-            <div className="work-section-top">
-                <p className="primary-subheading">Testimonial</p>
-                <h1 className="primary-heading"> What They Are Saying</h1>
-                <p className="primary-text">
-                    "I feel so happy with this product, it has completely
-                    transformed my life."
-                </p>
-            </div>
-            <div className="testimonial-section-bottom">
-                <img src={ProfilePic} alt="" />
-                <p>
-                    "It has completely transformed my life, I feel so happy with
-                    this product."
-                </p>
-                <div className="testimonials-stars-container">
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
+        <section id="testimonials">
+            <div className="work-section-wrapper">
+                <div className="work-section-top">
+                    <p className="primary-subheading">Testimonial</p>
+                    <h1 className="primary-heading"> What They Are Saying</h1>
+                    <p className="primary-text">
+                        "I feel so happy with this product, it has completely
+                        transformed my life."
+                    </p>
                 </div>
-                <h2>John Doe</h2>
+                <div className="testimonial-section-bottom">
+                    <img src={ProfilePic} alt="" />
+                    <p>
+                        "It has completely transformed my life, I feel so happy
+                        with this product."
+                    </p>
+                    <div className="testimonials-stars-container">
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                    </div>
+                    <h2>John Doe</h2>
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

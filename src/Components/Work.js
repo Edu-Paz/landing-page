@@ -7,41 +7,44 @@ const Work = () => {
     const workInfoData = [
         {
             image: PickMeals,
-            title: "Pick Meals",
-            text: "Choose your favorite meals from our broad selection of available meals and enjoy a delicious lunch or dinner at home.",
+            title: "Posting a Story",
+            text: "Your customers post Stories tagging your establishment. Every post is an engagement opportunity!",
         },
         {
             image: ChooseMeals,
-            title: "Choose How Often",
-            text: "Choose how often you want to order from us. This could be once or twice a week.",
+            title: "Automatic Counting",
+            text: "Our system automatically counts every Story, Post, or Reel. Everything is simple and integrated!",
         },
         {
             image: DeliveryMeals,
-            title: "Fast Delivery",
-            text: "We deliver your meals as fast as possible, so you can enjoy a healthy meal without spending too much time.",
+            title: "Customer Reward",
+            text: "When the goal is reached, your customer gets a reward. Loyalty and engagement guaranteed!",
         },
     ];
     return (
-        <div className="work-section-wrapper">
-            <div className="work-section-top">
-                <p className="primary-subheading">Work</p>
-                <h1 className="primary-heading">How It Works</h1>
-                <p className="primary-text">
-                    Eat healthy to feel healthy. Live healthy to feel healthy.
-                </p>
-            </div>
-            <div className="work-section-bottom">
-                {workInfoData.map((data) => (
-                    <div className="work-section-info">
-                        <div className="info-boxes-img-container">
-                            <img src={data.image} alt="" />
+        <section id="work">
+            <div className="work-section-wrapper">
+                <div className="work-section-top">
+                    <p className="primary-subheading">Work</p>
+                    <h1 className="primary-heading">How It Works</h1>
+                    <p className="primary-text">
+                        Eat healthy to feel healthy. Live healthy to feel
+                        healthy.
+                    </p>
+                </div>
+                <div className="work-section-bottom">
+                    {workInfoData.map((data) => (
+                        <div className="work-section-info">
+                            <div className="info-boxes-img-container">
+                                <img src={data.image} alt="" />
+                            </div>
+                            <h2>{data.title}</h2>
+                            <p>{data.text}</p>
                         </div>
-                        <h2>{data.title}</h2>
-                        <p>{data.text}</p>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 
