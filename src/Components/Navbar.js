@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../Assets/Logo.png";
-import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import {
     Box,
@@ -15,7 +14,6 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {

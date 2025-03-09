@@ -29,7 +29,7 @@ const Home = () => {
                             fortune. Grow smarter, not harder..
                         </p>
                         <button className="secondary-button">
-                            Know More <FiArrowRight />
+                            Message Us <FiArrowRight />
                         </button>
                     </div>
                     <div className="home-image-container">

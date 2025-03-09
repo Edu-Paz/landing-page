@@ -122,20 +122,23 @@ nav {
     align-items: flex-start;
 }
 .primary-heading {
-    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+    font-size: clamp(4rem, 5vw, 4rem);
     color: #4c4c4c;
     /* line-height: 5rem; */
-    max-width: 600px;
+    max-width: 800px;
 }
 .primary-text {
+    margin-bottom: 2rem;
     font-size: clamp(1rem, 3vw, 1.5rem);
     max-width: 500px;
-    color: #6a6a6a;
+    color: #000000;
     margin: 1.5rem 0rem;
 }
 .secondary-button {
+    margin-top: 2rem;
     padding: 1rem 2.5rem;
-    background-color: #fe9e0d;
+    background-color: #25D366;
     outline: none;
     border: none;
     border-radius: 5rem;
@@ -153,24 +156,36 @@ nav {
     font-size: 1.5rem;
 }
 .secondary-button:hover {
-    background-color: #e48f0f;
+    background-color: #61de8f;
 }
 .about-section-container {
     margin-top: 20rem;
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 4rem;
+    align-items: flex-start;
+    padding: 2rem;
 }
 .about-background-image-container {
     position: absolute;
     left: -150px;
+    top: -50px;
     z-index: -2;
+    width: 600px;
+    height: 600px;
 }
 .about-section-image-container {
-    flex: 0.9;
-    margin-right: 1rem;
+    flex: 1;
+    min-width: 400px;
+    position:static;
 }
+.about-section-image-container img{
+    margin-top: 30%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 .about-section-text-container {
     flex: 1;
     justify-content: center;
@@ -390,9 +405,7 @@ nav {
 
 @media (max-width: 800px) {
     .nav-logo-container {
-        width: 120px !important; /* Reduz um pouco no mobile */
-        height: 40px !important;
-        margin-right: 1rem;
+        margin-right: 13rem;
     }
     .navbar-links-container {
         display: none;
@@ -498,3 +511,39 @@ nav {
         display: none;
     }
 }
+
+/* Estilos gerais */
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Acordeão */
+  .custom-accordion {
+    margin: 1rem 0 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .custom-accordion:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+  }
+  
+  /* Cabeçalho do acordeão */
+  .MuiAccordionSummary-content {
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* Ícone de expansão */
+  .MuiSvgIcon-root {
+    color: #007bff; /* Cor do ícone */
+  }
+  
+  /* Conteúdo expandido */
+  .MuiAccordionDetails-root {
+    background: #f8f9fa;
+    border-radius: 0 0 8px 8px;
+  }
