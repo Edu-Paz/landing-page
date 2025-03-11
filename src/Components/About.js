@@ -44,8 +44,8 @@ const About = () => {
                     <br></br>
                     <p>
                         💡 <strong>Flexible Rewards Engine:</strong> Set rules
-                        like ‘5 Stories = 1 Free Drink’ or ‘10 Reels = VIP Event
-                        Access’. Change campaigns seasonally with 2 clicks.
+                        like 5 Stories = 1 Free Drink or 10 Reels = VIP Event
+                        Access. Change campaigns seasonally with 2 clicks.
                     </p>
                 </div>
             ),
