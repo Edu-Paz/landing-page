@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
+import { formKeys } from "./config/formKeys";
 
 const Contact = () => {
     const [email, setEmail] = useState("");
@@ -10,7 +11,7 @@ const Contact = () => {
         try {
             // Envia os dados para o Google Forms
             await fetch(
-                "https://docs.google.com/forms/d/1kh8LukU0EjTQaKdsxZ3duhFumM21sfocpde2RdpBNMo/formResponse",
+                `https://docs.google.com/forms/d/${formKeys.googleFormId}/formResponse`,
                 {
                     method: "POST",
                     mode: "no-cors",
@@ -18,7 +19,7 @@ const Contact = () => {
                         "Content-Type": "application/x-www-form-urlencoded",
                     },
                     body: new URLSearchParams({
-                        "entry.1322255128": email,
+                        [formKeys.entryId]: email,
                     }),
                 }
             );
