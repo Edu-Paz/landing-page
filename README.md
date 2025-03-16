@@ -36,6 +36,10 @@ src/
 │   │   └── formKeys.js      # Form field configurations
 │   ├── Testimonial.jsx      # Testimonial carousel
 │   └── Work.jsx             # Work process section
+│   └── About.jsx
+│   └── Contact.jsx
+│   └── Footer.jsx
+│   └── Home.jsx
 ├── App.js                   # Main application component
 ├── index.js                 # Entry point
 └── styles/                  # Global styles
