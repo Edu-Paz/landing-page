@@ -1,114 +1,71 @@
-```markdown
-# Google Form Integration Guide
+# Getting Started with Create React App
 
-A step-by-step guide to integrate a Google Form into your React project while keeping users on your page.  
-**No redirects. No third-party services.**  
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## Table of Contents
-- [Prerequisites](#prerequisites)
-- [Google Forms Setup](#google-forms-setup)
-- [Project Setup](#project-setup)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Notes](#notes)
-- [License](#license)
+In the project directory, you can run:
 
----
+### `npm start`
 
-## Prerequisites
-- Node.js (v14+)
-- npm (v6+)
-- A Google account
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
----
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Google Forms Setup  
-Follow these steps to configure your Google Form for direct submission:
+### `npm test`
 
-### 1. **Get the `formResponse` URL**
-1. Open your Google Form in **edit mode** (URL ends with `/edit`).  
-2. Replace `/edit` in the URL with **`/formResponse`**:  
-   ```url
-   Original:  https://docs.google.com/forms/d/1ABCD12345/edit  
-   Modified: https://docs.google.com/forms/d/1ABCD12345/formResponse  
-   ```  
-   This URL will be used in your React component.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### 2. **Find the Field Entry ID**
-1. Click the **Preview** (👁️) button.  
-2. Right-click the email input field > **Inspect**.  
-3. Locate the `name` attribute (e.g., `name="entry.123456789"`).  
-   This ID (`entry.123456789`) identifies the form field.
+### `npm run build`
 
----
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Project Setup
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### 1. **Create Configuration File**
-1. Create a `config` folder and `formKeys.js` file:  
-   ```bash
-   mkdir -p src/Components/config && touch src/Components/config/formKeys.js
-   ```  
-2. Add your Google Form IDs to `formKeys.js`:  
-   ```javascript
-   // src/Components/config/formKeys.js
-   export const formConfig = {
-     googleFormId: "1ABCD12345",      // Replace with your form ID
-     entryId: "entry.123456789"       // Replace with your field ID
-   };
-   ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### 2. **Install Dependencies**
-```bash
-npm install
-```
+### `npm run eject`
 
-### 3. **Start the Project**
-```bash
-npm start
-```
-The app will open at `http://localhost:3000`.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
----
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Usage
-1. Users submit emails via your custom form.  
-2. Data is sent directly to Google Forms.  
-3. Responses appear in your Google Form’s **Responses** tab.  
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
----
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Project Structure
-```
-src/
-├── Components/
-│   ├── config/
-│   │   └── formKeys.js       # Google Form credentials
-│   └── Contact.js            # Form component
-public/
-.gitignore                   # Excludes sensitive files
-package.json                 # Project dependencies
-```
+## Learn More
 
----
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Notes
-- **CORS Restrictions**: Test submissions on a live server (e.g., Netlify, GitHub Pages). Local submissions may fail.  
-- **Security**: Never commit `formKeys.js` to version control if it contains sensitive data. Add it to `.gitignore`.  
-- **Alternatives**: For production, consider using environment variables (`.env`).  
+To learn React, check out the [React documentation](https://reactjs.org/).
 
----
+### Code Splitting
 
-## License
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-``` 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Key Features:
-- **Clear Instructions**: No prior Google Forms integration knowledge required.  
-- **Code-Ready**: Copy-paste commands and code blocks.  
-- **Warnings Included**: CORS, security, and testing notes.  
-- **Modular Structure**: Isolate credentials in `formKeys.js` for easy maintenance.  
+### Analyzing the Bundle Size
 
-Copy this to your `README.md` and customize the placeholders (e.g., form IDs, license).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# landing-page
