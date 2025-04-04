@@ -17,9 +17,6 @@ img {
 body {
     max-width: 100%;
     overflow-x: hidden;
-}
-
-body {
     background-color: #f6f6f6;
 }
 
@@ -88,9 +85,6 @@ nav {
     font-weight: 600;
     transition: 0.2s;
 }
-.navbar-cart-icon {
-    font-size: 1.15rem;
-}
 .primary-button:hover {
     background-color: rgb(234, 234, 234);
 }
@@ -120,6 +114,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    gap: 2rem;
 }
 .primary-heading {
     margin-bottom: 1rem;
@@ -137,7 +132,7 @@ nav {
 }
 .secondary-button {
     padding: 1rem 2.5rem;
-    background-color: #25d366;
+    background-color: #fe9e0d;
     border: none;
     border-radius: 5rem;
     font-size: 1.1rem;
@@ -161,7 +156,7 @@ nav {
     font-size: 1.5rem;
 }
 .secondary-button:hover {
-    background-color: #61de8f;
+    background-color: #fcc777;
 }
 .about-section-container {
     margin-top: 20rem;
@@ -246,14 +241,18 @@ nav {
     padding: 0.5rem;
     border-radius: 5rem;
     gap: 1rem; /* Espaço entre elementos */
+    
 }
 .contact-form-container input {
     flex: 1; /* Ocupa todo espaço disponível */
     border: none;
     outline: none;
     font-size: 1rem;
-    padding: 0.8rem 2rem;
+    padding: 0.5rem 2rem;
     min-width: 150px; /* Evita que fique muito estreito */
+    height: auto; 
+    line-height: 1.5;
+    flex: 1;
 }
 .footer-wrapper {
     margin: 6rem 0rem;

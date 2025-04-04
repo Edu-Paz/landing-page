@@ -1,12 +1,12 @@
 import React from "react";
-import PickMeals from "../Assets/pick-meals-image.png";
-import ChooseMeals from "../Assets/choose-image.png";
-import DeliveryMeals from "../Assets/delivery-image.png";
+import Notification from "../Assets/notification-image.png";
+import Growth from "../Assets/growth-image.png";
+import Reward from "../Assets/reward-image.png";
 
 const Work = () => {
     const workInfoData = [
         {
-            image: PickMeals,
+            image: Notification,
             title: "Posting a Story",
             text: (
                 <div>
@@ -24,7 +24,7 @@ const Work = () => {
             ),
         },
         {
-            image: ChooseMeals,
+            image: Growth,
             title: "Automatic Counting",
             text: (
                 <div>
@@ -41,7 +41,7 @@ const Work = () => {
             ),
         },
         {
-            image: DeliveryMeals,
+            image: Reward,
             title: "Customer Reward",
             text: (
                 <div>
